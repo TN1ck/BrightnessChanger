@@ -9,10 +9,12 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    let ddc = DDC()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ddc.setBrightness(ddc.displays[1], brightness: 30)
         // Do any additional setup after loading the view.
     }
 

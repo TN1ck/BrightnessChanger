@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CTest.xcodeproj">
+      location = "self:/Users/tomnick/Documents/Projects/CTest/BrightnessChanger.xcodeproj">
    </FileRef>
 </Workspace>

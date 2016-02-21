@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "62679B7F1C79EE0900926E04"
-               BuildableName = "CTest.app"
-               BlueprintName = "CTest"
-               ReferencedContainer = "container:CTest.xcodeproj">
+               BuildableName = "BrightnessChanger.app"
+               BlueprintName = "BrightnessChanger"
+               ReferencedContainer = "container:BrightnessChanger.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "62679B901C79EE0900926E04"
-               BuildableName = "CTestTests.xctest"
-               BlueprintName = "CTestTests"
-               ReferencedContainer = "container:CTest.xcodeproj">
+               BuildableName = "BrightnessChanger.xctest"
+               BlueprintName = "BrightnessChangerTests"
+               ReferencedContainer = "container:BrightnessChanger.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62679B7F1C79EE0900926E04"
-            BuildableName = "CTest.app"
-            BlueprintName = "CTest"
-            ReferencedContainer = "container:CTest.xcodeproj">
+            BuildableName = "BrightnessChanger.app"
+            BlueprintName = "BrightnessChanger"
+            ReferencedContainer = "container:BrightnessChanger.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62679B7F1C79EE0900926E04"
-            BuildableName = "CTest.app"
-            BlueprintName = "CTest"
-            ReferencedContainer = "container:CTest.xcodeproj">
+            BuildableName = "BrightnessChanger.app"
+            BlueprintName = "BrightnessChanger"
+            ReferencedContainer = "container:BrightnessChanger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62679B7F1C79EE0900926E04"
-            BuildableName = "CTest.app"
-            BlueprintName = "CTest"
-            ReferencedContainer = "container:CTest.xcodeproj">
+            BuildableName = "BrightnessChanger.app"
+            BlueprintName = "BrightnessChanger"
+            ReferencedContainer = "container:BrightnessChanger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

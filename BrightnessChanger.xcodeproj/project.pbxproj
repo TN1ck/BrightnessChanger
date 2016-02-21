@@ -12,6 +12,8 @@
 		62679B881C79EE0900926E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62679B871C79EE0900926E04 /* Assets.xcassets */; };
 		62679B8B1C79EE0900926E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62679B891C79EE0900926E04 /* Main.storyboard */; };
 		62679B961C79EE0900926E04 /* CTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62679B951C79EE0900926E04 /* CTestTests.swift */; };
+		62679BA61C79EF2500926E04 /* DDC.c in Sources */ = {isa = PBXBuildFile; fileRef = 62679BA41C79EF2500926E04 /* DDC.c */; };
+		62679BA81C79EF7200926E04 /* DDC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62679BA71C79EF7200926E04 /* DDC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,15 +27,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		62679B801C79EE0900926E04 /* CTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62679B801C79EE0900926E04 /* BrightnessChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightnessChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62679B831C79EE0900926E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62679B851C79EE0900926E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62679B871C79EE0900926E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62679B8A1C79EE0900926E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62679B8C1C79EE0900926E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62679B911C79EE0900926E04 /* CTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62679B911C79EE0900926E04 /* BrightnessChanger.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightnessChanger.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62679B951C79EE0900926E04 /* CTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTestTests.swift; sourceTree = "<group>"; };
 		62679B971C79EE0900926E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62679BA01C79EE1E00926E04 /* CTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		62679BA41C79EF2500926E04 /* DDC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DDC.c; sourceTree = "<group>"; };
+		62679BA51C79EF2500926E04 /* DDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDC.h; sourceTree = "<group>"; };
+		62679BA71C79EF7200926E04 /* DDC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +72,8 @@
 		62679B811C79EE0900926E04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				62679B801C79EE0900926E04 /* CTest.app */,
-				62679B911C79EE0900926E04 /* CTestTests.xctest */,
+				62679B801C79EE0900926E04 /* BrightnessChanger.app */,
+				62679B911C79EE0900926E04 /* BrightnessChanger.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +86,10 @@
 				62679B871C79EE0900926E04 /* Assets.xcassets */,
 				62679B891C79EE0900926E04 /* Main.storyboard */,
 				62679B8C1C79EE0900926E04 /* Info.plist */,
+				62679BA01C79EE1E00926E04 /* CTest-Bridging-Header.h */,
+				62679BA41C79EF2500926E04 /* DDC.c */,
+				62679BA51C79EF2500926E04 /* DDC.h */,
+				62679BA71C79EF7200926E04 /* DDC.swift */,
 			);
 			path = CTest;
 			sourceTree = "<group>";
@@ -96,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		62679B7F1C79EE0900926E04 /* CTest */ = {
+		62679B7F1C79EE0900926E04 /* BrightnessChanger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62679B9A1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "CTest" */;
+			buildConfigurationList = 62679B9A1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "BrightnessChanger" */;
 			buildPhases = (
 				62679B7C1C79EE0900926E04 /* Sources */,
 				62679B7D1C79EE0900926E04 /* Frameworks */,
@@ -108,14 +118,14 @@
 			);
 			dependencies = (
 			);
-			name = CTest;
+			name = BrightnessChanger;
 			productName = CTest;
-			productReference = 62679B801C79EE0900926E04 /* CTest.app */;
+			productReference = 62679B801C79EE0900926E04 /* BrightnessChanger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		62679B901C79EE0900926E04 /* CTestTests */ = {
+		62679B901C79EE0900926E04 /* BrightnessChangerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62679B9D1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "CTestTests" */;
+			buildConfigurationList = 62679B9D1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "BrightnessChangerTests" */;
 			buildPhases = (
 				62679B8D1C79EE0900926E04 /* Sources */,
 				62679B8E1C79EE0900926E04 /* Frameworks */,
@@ -126,9 +136,9 @@
 			dependencies = (
 				62679B931C79EE0900926E04 /* PBXTargetDependency */,
 			);
-			name = CTestTests;
+			name = BrightnessChangerTests;
 			productName = CTestTests;
-			productReference = 62679B911C79EE0900926E04 /* CTestTests.xctest */;
+			productReference = 62679B911C79EE0900926E04 /* BrightnessChanger.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 62679B7B1C79EE0900926E04 /* Build configuration list for PBXProject "CTest" */;
+			buildConfigurationList = 62679B7B1C79EE0900926E04 /* Build configuration list for PBXProject "BrightnessChanger" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -163,8 +173,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				62679B7F1C79EE0900926E04 /* CTest */,
-				62679B901C79EE0900926E04 /* CTestTests */,
+				62679B7F1C79EE0900926E04 /* BrightnessChanger */,
+				62679B901C79EE0900926E04 /* BrightnessChangerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62679BA61C79EF2500926E04 /* DDC.c in Sources */,
 				62679B861C79EE0900926E04 /* ViewController.swift in Sources */,
 				62679B841C79EE0900926E04 /* AppDelegate.swift in Sources */,
+				62679BA81C79EF7200926E04 /* DDC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +223,7 @@
 /* Begin PBXTargetDependency section */
 		62679B931C79EE0900926E04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 62679B7F1C79EE0900926E04 /* CTest */;
+			target = 62679B7F1C79EE0900926E04 /* BrightnessChanger */;
 			targetProxy = 62679B921C79EE0900926E04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -312,11 +324,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.CTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BrightnessChanger;
+				SWIFT_OBJC_BRIDGING_HEADER = "CTest/CTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -324,11 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.CTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BrightnessChanger;
+				SWIFT_OBJC_BRIDGING_HEADER = "CTest/CTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -340,8 +357,8 @@
 				INFOPLIST_FILE = CTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.CTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTest.app/Contents/MacOS/CTest";
+				PRODUCT_NAME = BrightnessChanger;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightnessChanger.app/Contents/MacOS/BrightnessChanger";
 			};
 			name = Debug;
 		};
@@ -353,15 +370,15 @@
 				INFOPLIST_FILE = CTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.CTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTest.app/Contents/MacOS/CTest";
+				PRODUCT_NAME = BrightnessChanger;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightnessChanger.app/Contents/MacOS/BrightnessChanger";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		62679B7B1C79EE0900926E04 /* Build configuration list for PBXProject "CTest" */ = {
+		62679B7B1C79EE0900926E04 /* Build configuration list for PBXProject "BrightnessChanger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62679B981C79EE0900926E04 /* Debug */,
@@ -370,21 +387,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62679B9A1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "CTest" */ = {
+		62679B9A1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "BrightnessChanger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62679B9B1C79EE0900926E04 /* Debug */,
 				62679B9C1C79EE0900926E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		62679B9D1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "CTestTests" */ = {
+		62679B9D1C79EE0900926E04 /* Build configuration list for PBXNativeTarget "BrightnessChangerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62679B9E1C79EE0900926E04 /* Debug */,
 				62679B9F1C79EE0900926E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
