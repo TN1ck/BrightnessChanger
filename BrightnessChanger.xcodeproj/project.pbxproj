@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		622377491C9DCB7C008D2BFA /* BrightnessChanger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BrightnessChanger.entitlements; sourceTree = "<group>"; };
 		62679B801C79EE0900926E04 /* BrightnessChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightnessChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62679B831C79EE0900926E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62679B851C79EE0900926E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +37,7 @@
 		62679B911C79EE0900926E04 /* BrightnessChanger.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightnessChanger.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62679B951C79EE0900926E04 /* CTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTestTests.swift; sourceTree = "<group>"; };
 		62679B971C79EE0900926E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62679BA01C79EE1E00926E04 /* CTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		62679BA01C79EE1E00926E04 /* BrightnessChanger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrightnessChanger-Bridging-Header.h"; sourceTree = "<group>"; };
 		62679BA41C79EF2500926E04 /* DDC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DDC.c; sourceTree = "<group>"; };
 		62679BA51C79EF2500926E04 /* DDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDC.h; sourceTree = "<group>"; };
 		62679BA71C79EF7200926E04 /* DDC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDC.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		62679B771C79EE0900926E04 = {
 			isa = PBXGroup;
 			children = (
+				622377491C9DCB7C008D2BFA /* BrightnessChanger.entitlements */,
 				62679B821C79EE0900926E04 /* CTest */,
 				62679B941C79EE0900926E04 /* CTestTests */,
 				62679B811C79EE0900926E04 /* Products */,
@@ -86,7 +88,7 @@
 				62679B871C79EE0900926E04 /* Assets.xcassets */,
 				62679B891C79EE0900926E04 /* Main.storyboard */,
 				62679B8C1C79EE0900926E04 /* Info.plist */,
-				62679BA01C79EE1E00926E04 /* CTest-Bridging-Header.h */,
+				62679BA01C79EE1E00926E04 /* BrightnessChanger-Bridging-Header.h */,
 				62679BA41C79EF2500926E04 /* DDC.c */,
 				62679BA51C79EF2500926E04 /* DDC.h */,
 				62679BA71C79EF7200926E04 /* DDC.swift */,
@@ -153,6 +155,11 @@
 				TargetAttributes = {
 					62679B7F1C79EE0900926E04 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					62679B901C79EE0900926E04 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -328,9 +335,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.CTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.BrightnessChanger;
 				PRODUCT_NAME = BrightnessChanger;
-				SWIFT_OBJC_BRIDGING_HEADER = "CTest/CTest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CTest/BrightnessChanger-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -343,9 +350,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.CTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.BrightnessChanger;
 				PRODUCT_NAME = BrightnessChanger;
-				SWIFT_OBJC_BRIDGING_HEADER = "CTest/CTest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CTest/BrightnessChanger-Bridging-Header.h";
 			};
 			name = Release;
 		};
