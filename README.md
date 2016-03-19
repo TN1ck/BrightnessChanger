@@ -7,3 +7,6 @@ This project started mostly to try out Swift and see how well C-bindings work wi
 it won't do more harm than that it might freeze your display.
 
 The Project is still called `CTest` because of the fact, that the bridging-header is currently really buggy and won't work anymore if I rename the folders.
+
+# Install
+Just download the binary here: https://dl.dropboxusercontent.com/u/1994140/BrightnessChanger.zip

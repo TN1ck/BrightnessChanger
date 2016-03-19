@@ -335,7 +335,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.BrightnessChanger;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tn1ck.Brightness-Changer";
 				PRODUCT_NAME = BrightnessChanger;
 				SWIFT_OBJC_BRIDGING_HEADER = "CTest/BrightnessChanger-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -350,7 +350,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tn1ck.BrightnessChanger;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tn1ck.Brightness-Changer";
 				PRODUCT_NAME = BrightnessChanger;
 				SWIFT_OBJC_BRIDGING_HEADER = "CTest/BrightnessChanger-Bridging-Header.h";
 			};

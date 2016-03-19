@@ -673,7 +673,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="376"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NAn-en-XKL">
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NAn-en-XKL">
                                 <rect key="frame" x="18" y="307" width="76" height="26"/>
                                 <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="883-at-XCt" id="ZV8-WZ-EYJ">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -690,7 +690,7 @@
                                     <action selector="selectDisplay:" target="XfG-lQ-9wD" id="4oN-ax-grA"/>
                                 </connections>
                             </popUpButton>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XhS-Es-taE">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XhS-Es-taE">
                                 <rect key="frame" x="18" y="339" width="90" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select Display" id="4hX-WF-yn0">
                                     <font key="font" metaFont="system"/>
@@ -704,24 +704,14 @@
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8IX-nm-o2l">
-                                <rect key="frame" x="18" y="264" width="69" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8IX-nm-o2l">
+                                <rect key="frame" x="18" y="265" width="69" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Brightness" id="JRr-eU-oPz">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mbn-Hy-k54">
-                                <rect key="frame" x="330" y="303" width="136" height="32"/>
-                                <buttonCell key="cell" type="push" title="Reload Displays" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="grf-vc-LRh">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="ReloadDisplays:" target="XfG-lQ-9wD" id="599-pF-Rb8"/>
-                                </connections>
-                            </button>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44L-bT-b0C">
                                 <rect key="frame" x="20" y="20" width="440" height="136"/>
                                 <clipView key="contentView" id="8Uv-Ys-a3x">
@@ -782,32 +772,42 @@
                                     <action selector="sliderCallback:" target="XfG-lQ-9wD" id="dPZ-v9-8Qj"/>
                                 </connections>
                             </slider>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mbn-Hy-k54">
+                                <rect key="frame" x="330" y="303" width="136" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reload Displays" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="grf-vc-LRh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ReloadDisplays:" target="XfG-lQ-9wD" id="599-pF-Rb8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="USz-ux-jcQ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="72" id="3PI-cr-hem"/>
                             <constraint firstItem="klF-0p-DMy" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="5AK-MT-si2"/>
                             <constraint firstItem="44L-bT-b0C" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="7u9-Vr-SVe"/>
                             <constraint firstItem="NAn-en-XKL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="8Bq-9A-JME"/>
+                            <constraint firstItem="NAn-en-XKL" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="45" id="D8m-j9-6m9"/>
                             <constraint firstAttribute="trailing" secondItem="xRe-ah-JJx" secondAttribute="trailing" constant="20" id="F7p-1p-QOl"/>
                             <constraint firstItem="Qm4-2u-9ee" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Gac-Fw-8Wk"/>
                             <constraint firstItem="44L-bT-b0C" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="220" id="H0o-K5-Jms"/>
                             <constraint firstAttribute="trailing" secondItem="44L-bT-b0C" secondAttribute="trailing" constant="20" id="H8C-n6-WT2"/>
                             <constraint firstItem="USz-ux-jcQ" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" id="HpU-1P-AsC"/>
-                            <constraint firstItem="NAn-en-XKL" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="39" id="O7K-9l-nMO"/>
                             <constraint firstItem="36o-np-I6G" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="OUY-no-d1B"/>
                             <constraint firstItem="xRe-ah-JJx" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Rns-t7-4r2"/>
                             <constraint firstAttribute="trailing" secondItem="Mbn-Hy-k54" secondAttribute="trailing" constant="20" id="UIF-Bb-dak"/>
+                            <constraint firstItem="8IX-nm-o2l" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="94" id="XQJ-jc-lbd"/>
                             <constraint firstItem="36o-np-I6G" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="135" id="aFs-sa-fkm"/>
+                            <constraint firstItem="XhS-Es-taE" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="c2f-VA-SAf"/>
                             <constraint firstAttribute="trailing" secondItem="klF-0p-DMy" secondAttribute="trailing" constant="20" id="gII-YB-cVG"/>
-                            <constraint firstItem="XhS-Es-taE" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="14" id="ii6-Fi-wFk"/>
                             <constraint firstItem="xRe-ah-JJx" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="151" id="jpx-sO-id7"/>
                             <constraint firstItem="klF-0p-DMy" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="112" id="jvB-lw-vL1"/>
                             <constraint firstItem="XhS-Es-taE" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="nCr-QP-8Sy"/>
                             <constraint firstAttribute="bottom" secondItem="44L-bT-b0C" secondAttribute="bottom" constant="20" id="tdv-bw-JcS"/>
-                            <constraint firstItem="Mbn-Hy-k54" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="39" id="tju-e1-5Kw"/>
                             <constraint firstItem="8IX-nm-o2l" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="uq9-wI-AW4"/>
-                            <constraint firstItem="8IX-nm-o2l" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="90" id="wAm-C8-0h0"/>
                             <constraint firstItem="Qm4-2u-9ee" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="177" id="wQn-ao-j01"/>
+                            <constraint firstItem="Mbn-Hy-k54" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="45" id="yV8-0B-5Bw"/>
                         </constraints>
                     </view>
                     <connections>
