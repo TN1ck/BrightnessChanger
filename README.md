@@ -1,6 +1,9 @@
 # BrightnessChanger
 An utility program to change the brightness and contrast of external display via the [DDC-Protocol](https://de.wikipedia.org/wiki/Display_Data_Channel).
 
+![screenshot of the application](./screenshot.png)
+
+
 The protocol implementation was adapted from https://github.com/kfix/ddcctl, there are also more information about problems and caveats.
 
 This project started mostly to try out Swift and see how well C-bindings work with it(pretty good!), it is by no means finished or well-tested, but
